@@ -16,9 +16,11 @@ function App(){
     setCoinsData((prev)=>[...prev,...data]);
     setLoading(false);
     }
+    // promise chaining
     Fetchdata()
     .then("executed successfully")
     .catch((err)=>{console.log("Error occured is ",err)})
+    //.catch((err)=>alert("error occured",err))
     // whenever page changes or increases function called 
   },[page])
 
